@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #4c6ef5, #007bff);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  header img {
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  
+  /* Main Container */
+  .kotak1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .kotak2 {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 300px;
+  }
+  
+  .kotak2 h3 {
+    font-size: 20px;
+    color: #4c6ef5;
+    margin-bottom: 15px;
+  }
+  
+  .kotak2 textarea,
+  .kotak2 input {
+    width: calc(100% - 40px); /* Matches container padding */
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    resize: none;
+    transition: background-color 0.3s;
+  }
+  
+  .kotak2 textarea:focus,
+  .kotak2 input:focus {
+    background-color: #ffffff;
+    outline: none;
+  }
+  
+  /* Buttons */
+  .kotak2 button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .kotak2 button.encode {
+    background-color: #28a745;
+  }
+  
+  .kotak2 button.encode:hover {
+    background-color: #218838;
+  }
+  
+  .kotak2 button.decode {
+    background-color: #dc3545;
+  }
+  
+  .kotak2 button.decode:hover {
+    background-color: #c82333;
+  }
+  
+  /* Adjust Box Sizes */
+  .kotak2 {
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .kotak1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

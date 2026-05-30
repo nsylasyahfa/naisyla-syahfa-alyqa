@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigenère Cipher Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="https://tse1.mm.bing.net/th?id=OIG1.3KjNp6YO4SD_Q8v2WixS&pid=ImgGn" alt="Logo">
+    <h1>Vigenère Cipher Tool</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="kotak1">
+    <!-- Plaintext Box -->
+    <div class="kotak2">
+      <h3>Plaintext</h3>
+      <textarea id="plaintext" rows="6" placeholder="Masukkan teks plaintext..."></textarea>
+      <button class="encode" onclick="encryptText()">Convert to Ciphertext</button>
+    </div>
+
+    <!-- Vigenère Key Box -->
+    <div class="kotak2">
+      <h3>Key</h3>
+      <input type="text" id="key" placeholder="Masukkan kunci Vigenère...">
+    </div>
+
+    <!-- Ciphertext Box -->
+    <div class="kotak2">
+      <h3>Ciphertext</h3>
+      <textarea id="ciphertext" rows="6" placeholder="Masukkan teks ciphertext..."></textarea>
+      <button class="decode" onclick="decryptText()">Convert to Plaintext</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
